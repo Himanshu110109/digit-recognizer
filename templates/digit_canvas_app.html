@@ -129,7 +129,7 @@ canvas.addEventListener("touchmove", e => {
 
    const data = canvas.toDataURL("image/png");
 
-   const res = await fetch("http://10.20.105.127:5000/predict",{
+   const res = await fetch("https://digit-recognizer-qd15.onrender.com/predict",{
      method:"POST",
      headers:{"Content-Type":"application/json"},
      body: JSON.stringify({image:data})
